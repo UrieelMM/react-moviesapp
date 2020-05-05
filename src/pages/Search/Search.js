@@ -11,7 +11,7 @@ const Search = (props) => {
   const [movieList, setMovieList] = useState([]);
   const [searchValue, setSearchValue] = useState("");
   useEffect(() => {
-    // obtener los valores de la busqueda
+    // obtener los valores de la busqueda realizada por el usuario
     const data = async () => {
       const searchValue = queryString.parseUrl(location.search);
       const { s } = searchValue.query;

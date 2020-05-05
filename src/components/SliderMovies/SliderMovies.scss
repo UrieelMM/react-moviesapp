@@ -1,0 +1,34 @@
+.slider-movies {
+  height: 500px;
+  box-shadow: 0 0 14px rgba(0, 0, 0, 0.8);
+  &__movie {
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+
+    &-info {
+      display: flex;
+      align-items: flex-end;
+      height: 100%;
+      padding-bottom: 40px;
+
+      > div {
+        background-color: #e1e1e1;
+        margin: 0 auto;
+        text-align: center;
+        width: 50%;
+        padding: 20px;
+        border-radius: 10px;
+      }
+    }
+  }
+}
+.ant-carousel .slick-dots li button {
+  background-color: #1890ff !important;
+  height: 5px !important;
+}
+.ant-list-bordered,
+.ant-list-bordered .ant-list-header {
+  border-radius: 10px 10px 0 0 !important;
+}

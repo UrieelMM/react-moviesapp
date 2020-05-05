@@ -1,0 +1,84 @@
+.movie {
+  height: calc(100vh - 64px);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  &__dark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  > .ant-row {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  &__poster {
+    height: 70%;
+    div {
+      height: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+  }
+  &__info {
+    height: 70%;
+    color: white;
+    &-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      h3 {
+        color: white;
+        margin: 0;
+        font-size: 32px;
+        span {
+          font-size: 22px;
+          margin-left: 10px;
+          opacity: 0.4;
+        }
+      }
+      button {
+        height: 100%;
+        background-color: transparent;
+        color: white;
+        border: none;
+        font-size: 18px;
+        display: flex;
+
+        &:hover,
+        &:focus,
+        &:active {
+          background-color: transparent;
+          cursor: pointer;
+          color: #1890ff;
+        }
+      }
+    }
+    &-content {
+      margin-top: 32px;
+      h3 {
+        color: white;
+        font-weight: bold;
+        font-size: 22px;
+        opacity: 0.5;
+      }
+      p {
+        font-size: 14px;
+      }
+      ul {
+        display: flex;
+        padding: 0;
+        margin: 0;
+      }
+      ul li {
+        margin-left: 25px;
+        padding: none;
+      }
+    }
+  }
+}
